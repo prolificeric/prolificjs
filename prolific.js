@@ -3,10 +3,8 @@ var Prolific = (function () {
 	var each = function (obj, fn) {
 		var k;
 		for (k in obj) {
-			if (obj.hasOwnProperty(k)) {
-				if (fn.call(obj, k, obj[k]) === false) {
-					return obj;
-				}
+			if (obj.hasOwnProperty(k) && fn.call(obj, k, obj[k]) === false) {
+				break;
 			}
 		}
 		return obj;
