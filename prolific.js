@@ -297,7 +297,7 @@ var Prolific = (function () {
 			Chain: Chain,
 			Queue: Queue,
 			Base: Base,
-			App: Base,
+			App: Module,
 			Mixable: Mixable,
 			Class: Class,
 			Module: Module,
